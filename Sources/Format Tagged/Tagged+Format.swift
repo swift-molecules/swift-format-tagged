@@ -1,5 +1,5 @@
-public import Format
-public import Tagged
+@_exported public import Format
+@_exported public import Tagged
 
 extension Tagged where Tag: ~Copyable & ~Escapable, Underlying: BinaryFloatingPoint {
 

@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-format.git",
+            url: "https://github.com/swift-atoms/swift-format.git",
             branch: "main"
         ),
         .package(
@@ -38,9 +38,7 @@ let package = Package(
         .testTarget(
             name: "Format Tagged Tests",
             dependencies: [
-                "Format Tagged",
-                .product(name: "Format", package: "swift-format"),
-                .product(name: "Tagged", package: "swift-tagged"),
+                "Format Tagged"
             ],
             path: "Tests/Format Tagged Tests"
         ),
