@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-atoms/swift-format.git",
+            url: "https://github.com/swift-atoms/swift-formatter.git",
             branch: "main"
         ),
         .package(
@@ -31,7 +31,7 @@ let package = Package(
         .target(
             name: "Format Tagged",
             dependencies: [
-                .product(name: "Format", package: "swift-format"),
+                .product(name: "Format", package: "swift-formatter"),
                 .product(name: "Tagged", package: "swift-tagged"),
             ]
         ),
